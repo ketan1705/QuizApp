@@ -1,0 +1,82 @@
+[
+  {
+    "question": "Which of the following is the correct file extension for C files?",
+    "option1": ".cpp",
+    "option2": ".c",
+    "option3": ".cs",
+    "option4": ".java",
+    "answer": ".c"
+  },
+  {
+    "question": "Which keyword is used to define a constant in C?",
+    "option1": "static",
+    "option2": "define",
+    "option3": "const",
+    "option4": "final",
+    "answer": "const"
+  },
+  {
+    "question": "What is the purpose of the 'main' function in a C program?",
+    "option1": "To allocate memory",
+    "option2": "To start program execution",
+    "option3": "To declare variables",
+    "option4": "To handle input and output",
+    "answer": "To start program execution"
+  },
+  {
+    "question": "Which of the following is a valid loop construct in C?",
+    "option1": "foreach",
+    "option2": "for",
+    "option3": "repeat",
+    "option4": "whileeach",
+    "answer": "for"
+  },
+  {
+    "question": "Which of the following functions is used to print output to the console in C?",
+    "option1": "scanf",
+    "option2": "print",
+    "option3": "printf",
+    "option4": "write",
+    "answer": "printf"
+  },
+  {
+    "question": "What is a pointer in C?",
+    "option1": "A variable that holds the address of another variable",
+    "option2": "A function that allocates memory",
+    "option3": "A type of array",
+    "option4": "A data type for floating-point numbers",
+    "answer": "A variable that holds the address of another variable"
+  },
+  {
+    "question": "Which header file is used for standard input and output operations in C?",
+    "option1": "stdio.h",
+    "option2": "conio.h",
+    "option3": "stdlib.h",
+    "option4": "string.h",
+    "answer": "stdio.h"
+  },
+  {
+    "question": "What is the size of an int data type in C (on a 32-bit system)?",
+    "option1": "2 bytes",
+    "option2": "4 bytes",
+    "option3": "8 bytes",
+    "option4": "16 bytes",
+    "answer": "4 bytes"
+  },
+  {
+    "question": "What is the purpose of the 'return' statement in C?",
+    "option1": "To terminate a loop",
+    "option2": "To return a value from a function",
+    "option3": "To define a function",
+    "option4": "To allocate memory",
+    "answer": "To return a value from a function"
+  },
+  {
+    "question": "Which operator is used to access the value at the address of a pointer in C?",
+    "option1": "*",
+    "option2": "&",
+    "option3": "->",
+    "option4": "::",
+    "answer": "*"
+  }
+]

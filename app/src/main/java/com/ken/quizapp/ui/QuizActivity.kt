@@ -19,12 +19,13 @@ class QuizActivity : AppCompatActivity() {
     private var count: Int = 0
     private var score: Int = 0
     private var timer: CountDownTimer? = null
+    private var type: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_quiz)
-        addDataInList()
-
+        type = intent.getStringExtra("TYPE").toString()
+        getDataFromFirestore()
         binding.option1.setOnClickListener {
             nextQuestion(binding.option1.text.toString())
         }
@@ -67,10 +68,10 @@ class QuizActivity : AppCompatActivity() {
                 var questions = i.toObject(QuestionsModel::class.java)
                 list.add(questions!!)
             }
-
             binding.quizData = list[0]
             startTimer()
         }
+
 
         /*    list.add(
                 QuestionsModel(
@@ -131,6 +132,23 @@ class QuizActivity : AppCompatActivity() {
     */
     }
 
+    fun getDataFromFirestore() {
+        list = ArrayList<QuestionsModel>()
+
+        Firebase.firestore.collection("quiz").document(type.toString())
+            .collection("questions")
+            .get()
+            .addOnSuccessListener { doct ->
+                list.clear()
+                for (i in doct.documents) {
+                    var questions = i.toObject(QuestionsModel::class.java)
+                    list.add(questions!!)
+                }
+                binding.quizData = list[0]
+                startTimer()
+            }
+    }
+
     fun uploadQuestions() {
 
         for (question in list) {
@@ -143,7 +161,6 @@ class QuizActivity : AppCompatActivity() {
                     Log.w("Firebase Questions: ", "Error adding document", e)
                 }
         }
-
     }
 
     private fun startTimer() {

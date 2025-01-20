@@ -1,0 +1,82 @@
+[
+  {
+    "question": "What is the size of a char in Java?",
+    "option1": "1 byte",
+    "option2": "2 bytes",
+    "option3": "4 bytes",
+    "option4": "8 bytes",
+    "answer": "2 bytes"
+  },
+  {
+    "question": "Which of these is the correct way to declare an array in Java?",
+    "option1": "int[] arr = new int[5];",
+    "option2": "int arr = new int[5];",
+    "option3": "int arr[] = int[5];",
+    "option4": "arr[5] = new int[];",
+    "answer": "int[] arr = new int[5];"
+  },
+  {
+    "question": "Which keyword is used to inherit a class in Java?",
+    "option1": "implements",
+    "option2": "inherits",
+    "option3": "extends",
+    "option4": "super",
+    "answer": "extends"
+  },
+  {
+    "question": "Which of the following is not a primitive data type in Java?",
+    "option1": "int",
+    "option2": "float",
+    "option3": "string",
+    "option4": "char",
+    "answer": "string"
+  },
+  {
+    "question": "What is the default value of a boolean variable in Java?",
+    "option1": "null",
+    "option2": "true",
+    "option3": "false",
+    "option4": "undefined",
+    "answer": "false"
+  },
+  {
+    "question": "Which method is used to get the length of a string in Java?",
+    "option1": "length",
+    "option2": "size()",
+    "option3": "getLength()",
+    "option4": "length()",
+    "answer": "length()"
+  },
+  {
+    "question": "What is the parent class of all classes in Java?",
+    "option1": "Object",
+    "option2": "Class",
+    "option3": "Superclass",
+    "option4": "BaseClass",
+    "answer": "Object"
+  },
+  {
+    "question": "Which of these access modifiers makes a member accessible only within its own package?",
+    "option1": "private",
+    "option2": "protected",
+    "option3": "default",
+    "option4": "public",
+    "answer": "default"
+  },
+  {
+    "question": "What does the 'static' keyword mean in Java?",
+    "option1": "The variable or method belongs to the instance of the class",
+    "option2": "The variable or method belongs to the class, not the instance",
+    "option3": "The variable or method is temporary",
+    "option4": "The variable or method cannot be overridden",
+    "answer": "The variable or method belongs to the class, not the instance"
+  },
+  {
+    "question": "Which exception is thrown when an array is accessed with an illegal index in Java?",
+    "option1": "NullPointerException",
+    "option2": "ArrayIndexOutOfBoundsException",
+    "option3": "IllegalArgumentException",
+    "option4": "ClassCastException",
+    "answer": "ArrayIndexOutOfBoundsException"
+  }
+]

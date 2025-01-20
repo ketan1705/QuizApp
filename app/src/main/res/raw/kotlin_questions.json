@@ -1,0 +1,82 @@
+[
+  {
+    "question": "What is the file extension for Kotlin files?",
+    "option1": ".kot",
+    "option2": ".kotlin",
+    "option3": ".kt",
+    "option4": ".kts",
+    "answer": ".kt"
+  },
+  {
+    "question": "Which keyword is used to declare a function in Kotlin?",
+    "option1": "function",
+    "option2": "def",
+    "option3": "func",
+    "option4": "fun",
+    "answer": "fun"
+  },
+  {
+    "question": "What is a primary constructor in Kotlin?",
+    "option1": "A constructor defined within the class body",
+    "option2": "A constructor defined outside the class",
+    "option3": "A constructor defined in the class header",
+    "option4": "A constructor that must be called explicitly",
+    "answer": "A constructor defined in the class header"
+  },
+  {
+    "question": "What does the 'val' keyword represent in Kotlin?",
+    "option1": "A variable that can be reassigned",
+    "option2": "A variable that cannot be reassigned",
+    "option3": "A nullable variable",
+    "option4": "A static variable",
+    "answer": "A variable that cannot be reassigned"
+  },
+  {
+    "question": "What is the equivalent of Java's 'null' safety in Kotlin?",
+    "option1": "Nullable types",
+    "option2": "Static types",
+    "option3": "Primitive types",
+    "option4": "Dynamic types",
+    "answer": "Nullable types"
+  },
+  {
+    "question": "Which function is used to print output to the console in Kotlin?",
+    "option1": "System.out.println()",
+    "option2": "println()",
+    "option3": "console.log()",
+    "option4": "print()",
+    "answer": "println()"
+  },
+  {
+    "question": "Which of the following is used to handle null values safely in Kotlin?",
+    "option1": "The '?' operator",
+    "option2": "The '!' operator",
+    "option3": "The '??' operator",
+    "option4": "The '?.' operator",
+    "answer": "The '?.' operator"
+  },
+  {
+    "question": "How do you declare a class in Kotlin?",
+    "option1": "class MyClass()",
+    "option2": "class MyClass",
+    "option3": "public class MyClass",
+    "option4": "MyClass class",
+    "answer": "class MyClass"
+  },
+  {
+    "question": "Which of the following is not a Kotlin scope function?",
+    "option1": "let",
+    "option2": "apply",
+    "option3": "run",
+    "option4": "execute",
+    "answer": "execute"
+  },
+  {
+    "question": "What is the difference between 'val' and 'var' in Kotlin?",
+    "option1": "'val' is mutable, 'var' is immutable",
+    "option2": "'val' is immutable, 'var' is mutable",
+    "option3": "Both are mutable",
+    "option4": "Both are immutable",
+    "answer": "'val' is immutable, 'var' is mutable"
+  }
+]

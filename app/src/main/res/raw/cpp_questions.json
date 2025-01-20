@@ -1,0 +1,90 @@
+[
+  {
+    "question": "Which of the following is the correct file extension for C++ files?",
+    "option1": ".c",
+    "option2": ".cpp",
+    "option3": ".cxx",
+    "option4": ".hpp",
+    "answer": ".cpp"
+  },
+  {
+    "question": "What is a namespace in C++?",
+    "option1": "A function that groups variables",
+    "option2": "A container for variables and functions",
+    "option3": "A type of pointer",
+    "option4": "A data type for strings",
+    "answer": "A container for variables and functions"
+  },
+  {
+    "question": "What is the purpose of the 'iostream' header file in C++?",
+    "option1": "To perform file operations",
+    "option2": "To perform input/output operations",
+    "option3": "To include string functions",
+    "option4": "To handle arrays",
+    "answer": "To perform input/output operations"
+  },
+  {
+    "question": "Which of the following is used to define a constant value in C++?",
+    "option1": "const",
+    "option2": "define",
+    "option3": "static",
+    "option4": "constexpr",
+    "answer": "const"
+  },
+  {
+    "question": "Which operator is used to access members of a class or structure using a pointer in C++?",
+    "option1": ".",
+    "option2": "->",
+    "option3": "::",
+    "option4": "&",
+    "answer": "->"
+  },
+  {
+    "question": "What is a constructor in C++?",
+    "option1": "A function that initializes objects",
+    "option2": "A function that destroys objects",
+    "option3": "A static function of a class",
+    "option4": "A function that allocates memory",
+    "answer": "A function that initializes objects"
+  },
+  {
+    "question": "What is the purpose of the 'virtual' keyword in C++?",
+    "option1": "To define an inline function",
+    "option2": "To allow a function to be overridden",
+    "option3": "To declare a friend function",
+    "option4": "To define a constant variable",
+    "answer": "To allow a function to be overridden"
+  },
+  {
+    "question": "Which of the following is true about polymorphism in C++?",
+    "option1": "It allows multiple functions with the same name",
+    "option2": "It allows runtime function overriding",
+    "option3": "It allows compile-time function overloading",
+    "option4": "All of the above",
+    "answer": "All of the above"
+  },
+  {
+    "question": "What is the default access specifier for members of a class in C++?",
+    "option1": "public",
+    "option2": "private",
+    "option3": "protected",
+    "option4": "static",
+    "answer": "private"
+  },
+  {
+    "question": "Which of the following is used to dynamically allocate memory in C++?",
+    "option1": "new",
+    "option2": "malloc",
+    "option3": "alloc",
+    "option4": "calloc",
+    "answer": "new"
+  },
+  {
+    "question": "What does the 'delete' operator do in C++?",
+    "option1": "Deletes a class",
+    "option2": "Deletes a function",
+    "option3": "Frees memory allocated with 'new'",
+    "option4": "Removes a pointer variable",
+    "answer": "Frees memory allocated with 'new'"
+  }
+]
