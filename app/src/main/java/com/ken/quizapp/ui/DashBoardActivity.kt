@@ -37,7 +37,7 @@ class DashBoardActivity : AppCompatActivity() {
             list, this
         )
 //        storeDataInFirestore(list, questions)
-        storeSingleDataInFirestore(list)
+//        storeSingleDataInFirestore(list)
         binding.logout.setOnClickListener {
             Firebase.auth.signOut()
             startActivity(Intent(this, LoginActivity::class.java))
@@ -45,6 +45,7 @@ class DashBoardActivity : AppCompatActivity() {
         }
     }
 
+    // this is for storing data in firestore
     fun storeSingleDataInFirestore(
         list: ArrayList<CategoryModel>,
     ) {
@@ -72,43 +73,43 @@ class DashBoardActivity : AppCompatActivity() {
         }
     }
 
+    // this is for storing data in firestore
+    /*  fun storeDataInFirestore(list: ArrayList<CategoryModel>, questions: List<QuestionsModel>) {
 
-    fun storeDataInFirestore(list: ArrayList<CategoryModel>, questions: List<QuestionsModel>) {
+          list.forEach { category ->
+              val collecionRef =
+                  Firebase.firestore.collection("quiz").document(category.title.toString())
+                      .collection("questions")
+  //            collecionRef.add {
+              questions.forEach { questions ->
+                  collecionRef.add(
+                      mapOf(
+                          "question" to questions.question,
+                          "option1" to questions.option1,
+                          "option2" to questions.option2,
+                          "option3" to questions.option3,
+                          "option4" to questions.option4,
+                          "correctOption" to questions.answer
+                      )
+                  )
+                      .addOnSuccessListener { documentReference ->
+                          val data = documentReference.id
+                          Log.d("DashboardActivity", "storeDataInFirestore: $data")
+                      }
+              }
+          }
 
-        list.forEach { category ->
-            val collecionRef =
-                Firebase.firestore.collection("quiz").document(category.title.toString())
-                    .collection("questions")
-//            collecionRef.add {
-            questions.forEach { questions ->
-                collecionRef.add(
-                    mapOf(
-                        "question" to questions.question,
-                        "option1" to questions.option1,
-                        "option2" to questions.option2,
-                        "option3" to questions.option3,
-                        "option4" to questions.option4,
-                        "correctOption" to questions.answer
-                    )
-                )
-                    .addOnSuccessListener { documentReference ->
-                        val data = documentReference.id
-                        Log.d("DashboardActivity", "storeDataInFirestore: $data")
-                    }
-            }
-        }
-
-    }
-
+      }
+  */
     fun loadQuestionsFromJson(type: String, context: Context): List<QuestionsModel> {
         var inputStream: InputStream = context.resources.openRawResource(R.raw.java_questions)
-        if (type.equals("java"))
+        if (type == "java")
             inputStream = context.resources.openRawResource(R.raw.java_questions)
-        else if (type.equals("c++"))
+        else if (type == "c++")
             inputStream = context.resources.openRawResource(R.raw.cpp_questions)
-        else if (type.equals("c"))
+        else if (type == "c")
             inputStream = context.resources.openRawResource(R.raw.c_questions)
-        else if (type.equals("kotlin"))
+        else if (type == "kotlin")
             inputStream = context.resources.openRawResource(R.raw.kotlin_questions)
         val json = inputStream.bufferedReader().use { it.readText() }
         val listType = object : TypeToken<List<QuestionsModel>>() {}.type

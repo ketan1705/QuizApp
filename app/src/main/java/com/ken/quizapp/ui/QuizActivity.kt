@@ -3,7 +3,6 @@ package com.ken.quizapp.ui
 import android.content.Intent
 import android.os.Bundle
 import android.os.CountDownTimer
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.google.firebase.firestore.ktx.firestore
@@ -59,79 +58,6 @@ class QuizActivity : AppCompatActivity() {
         }
     }
 
-    private fun addDataInList() {
-        list = ArrayList<QuestionsModel>()
-
-        Firebase.firestore.collection("quiz").get().addOnSuccessListener { doct ->
-            list.clear()
-            for (i in doct.documents) {
-                var questions = i.toObject(QuestionsModel::class.java)
-                list.add(questions!!)
-            }
-            binding.quizData = list[0]
-            startTimer()
-        }
-
-
-        /*    list.add(
-                QuestionsModel(
-                    "What is the primary programming language used for Android app development?",
-                    "Python",
-                    "Java",
-                    "Kotlin",
-                    "C++",
-                    "Java" // Correct answer
-                )
-            )
-
-            list.add(
-                QuestionsModel(
-                    "Which component is used to create a user interface in Android?",
-                    "Activity",
-                    "Service",
-                    "Broadcast Receiver",
-                    "Content Provider",
-                    "Activity" // Correct answer
-                )
-            )
-
-            list.add(
-                QuestionsModel(
-                    "What is the purpose of the AndroidManifest.xml file?",
-                    "To define the layout of the app",
-                    "To declare app components and permissions",
-                    "To manage app resources",
-                    "To handle user input",
-                    "To declare app components and permissions" // Correct answer
-                )
-            )
-
-            list.add(
-                QuestionsModel(
-                    "Which of the following is a lifecycle method of an Android Activity?",
-                    "onCreate()",
-                    "onStartActivity()",
-                    "onResumeApp()",
-                    "onStopActivity()",
-                    "onCreate()" // Correct answer
-                )
-            )
-
-            list.add(
-                QuestionsModel(
-                    "What is the use of Gradle in Android development?",
-                    "To design the user interface",
-                    "To manage app dependencies and build configurations",
-                    "To handle network requests",
-                    "To store app data",
-                    "To manage app dependencies and build configurations" // Correct answer
-                )
-            )
-            uploadQuestions()
-            binding.quizData = list[0]
-    */
-    }
-
     fun getDataFromFirestore() {
         list = ArrayList<QuestionsModel>()
 
@@ -149,7 +75,8 @@ class QuizActivity : AppCompatActivity() {
             }
     }
 
-    fun uploadQuestions() {
+    // this is for uploading data in firestore
+    /*fun uploadQuestions() {
 
         for (question in list) {
             Firebase.firestore.collection("quiz").add(question)
@@ -162,7 +89,7 @@ class QuizActivity : AppCompatActivity() {
                 }
         }
     }
-
+*/
     private fun startTimer() {
         // 30 seconds countdown with 1 second interval
         timer = object : CountDownTimer(30000, 1000) {
