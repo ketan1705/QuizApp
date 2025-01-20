@@ -50,6 +50,7 @@ class DashBoardActivity : AppCompatActivity() {
         list: ArrayList<CategoryModel>,
     ) {
         list.forEach { category ->
+
             val collectionRef =
                 Firebase.firestore.collection("quiz").document(category.title.toString())
                     .collection("questions")
